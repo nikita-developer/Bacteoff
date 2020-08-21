@@ -15,9 +15,8 @@
 }
 
 .sostav__item {
-    display: flex;
     width: 390px;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 15px;
     background-color: #fff;
     border-radius: 2px;
@@ -27,15 +26,17 @@
         text-align: right;
 
         & .sostav__media {
+            float: right;
             margin-right: 0;
-            margin-left: 20px;
+            margin-left: 10px;
         }
     }
 }
 
 .sostav__media {
     flex: 0 0 auto;
-    margin-right: 20px;
+    float: left;
+    margin-right: 10px;
 }
 
 .sostav__info {
@@ -66,14 +67,14 @@
         &_right {
             & .sostav__media {
                 margin-right: 0;
-                margin-left: 10px;
+                margin-left: 20px;
             }
         }
     }
 
     .sostav__media {
         max-width: 90px;
-        margin-right: 10px;
+        margin-right: 20px;
     }
 
     .sostav__info {
@@ -92,6 +93,7 @@
 
 @media (max-width: 768px) {
     .sostav__item {
+        display: flex;
         flex-direction: column;
         width: calc(50% - 7.5px);
         text-align: center;
@@ -101,6 +103,14 @@
             margin-right: auto;
             margin-bottom: 10px;
             margin-left: auto;
+        }
+    }
+
+    .sostav__info {
+        & span {
+            &:last-child {
+                font-size: 14px;
+            }
         }
     }
 
@@ -115,12 +125,14 @@
 
 @media (max-width: 420px) {
     .sostav__item {
+        display: block;
         flex-direction: row;
         width: 100%;
         text-align: left;
 
         & .sostav__media {
             margin-right: 10px;
+            margin-bottom: 0;
         }
 
         &_right {
@@ -132,5 +144,9 @@
                 margin-left: 10px;
             }
         }
+    }
+
+    .sostav__media {
+        margin-bottom: 0;
     }
 }
