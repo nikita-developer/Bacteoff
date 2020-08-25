@@ -114,5 +114,13 @@
     .section {
         padding-top: 30px;
         padding-bottom: 30px;
+
+        &_parazits {
+            background-image: url("../media/section/parazits-480.jpg");
+        }
+
+        &_pain {
+            background-image: url("../media/section/pain-480.jpg");
+        }
     }
 }
