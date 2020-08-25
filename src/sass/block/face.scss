@@ -133,12 +133,17 @@
 }
 
 @media (max-width: 480px) {
+    .face__logo {
+        margin-bottom: 20px;
+    }
+
     .face__check {
         font-size: 18px;
     }
 
     .face__product {
         max-width: 320px;
+        margin-top: -20px;
 
         &::before {
             width: 250px;

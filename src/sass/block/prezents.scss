@@ -6,10 +6,10 @@
 
 .prezents__box {
     flex: 0 0 auto;
-    max-width: 425px;
 }
 
 .prezents__title {
+    max-width: 700px;
     margin-bottom: 30px;
     font-size: 63px;
     line-height: 56px;
@@ -21,6 +21,7 @@
 }
 
 .prezents__description {
+    max-width: 425px;
     font-size: 18px;
 }
 
@@ -58,6 +59,10 @@
         padding: 15px;
         background-color: rgba(255, 255, 255, .8);
         border-radius: 3px;
+    }
+
+    .prezents__box {
+        max-width: 425px;
     }
 }
 

@@ -100,14 +100,20 @@
 @media (max-width: 480px) {
     .commits__title {
         font-size: 37px;
+        text-align: left;
     }
 
     .commits__description {
-        font-size: 18px;
-        line-height: 1.4;
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: left;
     }
 
     .commits__item {
         padding: 15px;
+    }
+
+    .commits__name {
+        margin-right: auto;
     }
 }
