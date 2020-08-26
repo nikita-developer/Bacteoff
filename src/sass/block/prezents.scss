@@ -96,7 +96,9 @@
 }
 
 @media (max-width: 480px) {
-    .container {
-        max-width: 100%;
+    .prezents__product {
+        & img {
+            margin-left: -10px;
+        }
     }
 }

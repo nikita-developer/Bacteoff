@@ -81,6 +81,10 @@
             background-image: url("../media/section/pain-1024.jpg");
             background-position: center bottom;
         }
+
+        &_sostav {
+            overflow-y: hidden;
+        }
     }
 
     .section__title {
@@ -114,6 +118,7 @@
     .section {
         padding-top: 30px;
         padding-bottom: 30px;
+        overflow-y: hidden;
 
         &_parazits {
             background-image: url("../media/section/parazits-480.jpg");
